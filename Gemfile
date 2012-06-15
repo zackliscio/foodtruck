@@ -3,10 +3,15 @@ source 'http://rubygems.org'
 gem 'rails', '3.1.6'
 gem 'bootstrap-rails'
 gem 'surveyor'
+gem 'therubyracer'
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+gem 'sqlite3', :group => [:development, :test]
+
+group :production do
+  gem 'thin'
+end
 
 
 # Gems used only for assets and not required
