@@ -6,12 +6,12 @@ gem 'surveyor'
 gem 'therubyracer'
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
-
+ gem 'pg'
 gem 'sqlite3', :group => [:development, :test]
 
 group :production do
   gem 'thin'
-  gem 'pg'
+ 
 end
 
 
