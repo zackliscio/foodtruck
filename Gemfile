@@ -1,9 +1,10 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.1.6'
-gem 'bootstrap-rails'
+gem 'bootstrap-sass'
 gem 'surveyor'
 gem 'therubyracer'
+gem 'formtastic'
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
  gem 'pg'
@@ -20,6 +21,7 @@ end
 group :assets do
   gem 'sass-rails',   '~> 3.1.5'
   gem 'coffee-rails', '~> 3.1.1'
+  gem 'haml-rails'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer'
