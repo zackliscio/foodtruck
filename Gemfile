@@ -5,7 +5,7 @@ gem 'bootstrap-sass'
 gem 'surveyor'
 gem 'therubyracer'
 gem 'formtastic'
-gem 'taps'
+
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
  gem 'pg'
@@ -16,6 +16,10 @@ group :production do
  
 end
 
+group :development do
+	gem 'taps'
+	gem 'rvm'
+end
 
 # Gems used only for assets and not required
 # in production environments by default.
