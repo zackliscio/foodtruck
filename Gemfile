@@ -5,6 +5,8 @@ gem 'bootstrap-sass'
 gem 'surveyor'
 gem 'therubyracer'
 gem 'formtastic'
+gem 'omniauth-facebook'
+gem 'omniauth'
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'

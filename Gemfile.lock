@@ -45,6 +45,8 @@ GEM
     eventmachine (0.12.10)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    faraday (0.8.1)
+      multipart-post (~> 1.1)
     fastercsv (1.5.5)
     formtastic (1.2.4)
       actionpack (>= 2.3.7)
@@ -56,6 +58,7 @@ GEM
       activesupport (~> 3.0)
       haml (~> 3.0)
       railties (~> 3.0)
+    hashie (1.2.0)
     hike (1.2.1)
     i18n (0.6.0)
     jquery-rails (1.0.19)
@@ -69,7 +72,19 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.18)
     multi_json (1.2.0)
+    multipart-post (1.1.5)
     mustache (0.99.4)
+    oauth2 (0.5.2)
+      faraday (~> 0.7)
+      multi_json (~> 1.0)
+    omniauth (1.1.0)
+      hashie (~> 1.2)
+      rack
+    omniauth-facebook (1.2.0)
+      omniauth-oauth2 (~> 1.0.0)
+    omniauth-oauth2 (1.0.0)
+      oauth2 (~> 0.5.0)
+      omniauth (~> 1.0)
     pg (0.13.2)
     polyglot (0.3.3)
     rabl (0.6.13)
@@ -164,6 +179,8 @@ DEPENDENCIES
   formtastic
   haml-rails
   jquery-rails
+  omniauth
+  omniauth-facebook
   pg
   rails (= 3.1.6)
   rvm
