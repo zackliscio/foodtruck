@@ -1,3 +1,6 @@
+
+<div class = "span12">
+
 <% if current_user %>
   Welcome <%= current_user.name %>!
   <%= link_to "Sign Out", signout_path %>
@@ -5,3 +8,5 @@
   <%= link_to "Sign in with Facebook", "/auth/facebook" %>
   <%= link_to "Sign in with Twitter", "/auth/twitter" %>
 <% end %>
+
+</div>
