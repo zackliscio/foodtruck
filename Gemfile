@@ -6,6 +6,7 @@ gem 'surveyor'
 gem 'therubyracer'
 gem 'formtastic'
 gem 'omniauth-facebook'
+gem 'omniauth-twitter'
 gem 'omniauth'
 
 # Bundle edge Rails instead:
