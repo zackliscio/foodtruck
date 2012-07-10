@@ -6,6 +6,7 @@
 <% if current_user %>
   Welcome <%= current_user.name %>!
   <%= link_to "Sign Out", signout_path %>
+  <h1><%=link_to "Take the Survey", "/surveys"%>
 <% else %>
 <h1>Log in with Facebook or Twitter to vote<h1>
 	<%= link_to image_tag("facebook_128.png", 

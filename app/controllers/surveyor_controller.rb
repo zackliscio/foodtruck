@@ -1,4 +1,5 @@
 module SurveyorControllerCustomMethods
+
   def self.included(base)
     # base.send :before_filter, :require_user   # AuthLogic
     # base.send :before_filter, :login_required  # Restful Authentication
@@ -30,7 +31,8 @@ module SurveyorControllerCustomMethods
   end
   def surveyor_finish
     # the update action redirects to this method if given params[:finish]
-    super # available_surveys_path
+    flash[:warning] = "Thanks for participating in the Trucky Awards"
+    root_path
   end
 end
 class SurveyorController < ApplicationController
