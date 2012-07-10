@@ -5,6 +5,7 @@
 </br>
 <% if current_user %>
   Welcome <%= current_user.name %>!
+  <%= current_user.survey_completed.to_s %>
   <%= link_to "Sign Out", signout_path %>
   <h1><%=link_to "Take the Survey", "/surveys"%>
 <% else %>

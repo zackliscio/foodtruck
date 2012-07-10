@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120710122927) do
+ActiveRecord::Schema.define(:version => 20120710151817) do
 
   create_table "answers", :force => true do |t|
     t.integer  "question_id"
@@ -140,6 +140,11 @@ ActiveRecord::Schema.define(:version => 20120710122927) do
 
   add_index "responses", ["survey_section_id"], :name => "index_responses_on_survey_section_id"
 
+  create_table "survey_observers", :force => true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "survey_sections", :force => true do |t|
     t.integer  "survey_id"
     t.string   "title"
@@ -180,6 +185,7 @@ ActiveRecord::Schema.define(:version => 20120710122927) do
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.boolean  "survey_completed"
   end
 
   create_table "validation_conditions", :force => true do |t|

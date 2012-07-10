@@ -31,7 +31,8 @@ module SurveyorControllerCustomMethods
   end
   def surveyor_finish
     # the update action redirects to this method if given params[:finish]
-    flash[:warning] = "Thanks for participating in the Trucky Awards"
+
+    flash.keep[:notice] = "Thanks for participating in the Trucky Awards"
     root_path
   end
 end
