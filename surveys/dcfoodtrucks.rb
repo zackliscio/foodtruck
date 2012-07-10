@@ -1,4 +1,4 @@
-  survey "Trucky Awards - DC Food Trucks" do
+  survey "DC Food Trucks" do
 
   section "About You" do
     # A label is a question that accepts no answers
