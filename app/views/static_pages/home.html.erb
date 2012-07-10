@@ -7,11 +7,19 @@
   Welcome <%= current_user.name %>!
   <%= link_to "Sign Out", signout_path %>
 <% else %>
+<h1>Log in with Facebook or Twitter to vote<h1>
 	<%= link_to image_tag("facebook_128.png", 
 	:size => "128x128" ), "/auth/facebook" %>
   	
   	<%= link_to image_tag("twitter_128.png", 
 	:size => "128x128" ), "/auth/twitter" %>
+
+	<p>
+  <strong>Don't use these services?</strong>
+  <%= link_to "Create an account", new_identity_path %> or
+  <%= link_to "login", "/auth/identity" %> 
+</p>
+ 
 
 <% end %>
 

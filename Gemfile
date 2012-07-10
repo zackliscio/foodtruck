@@ -7,16 +7,17 @@ gem 'therubyracer'
 gem 'formtastic'
 gem 'omniauth-facebook'
 gem 'omniauth-twitter'
-gem 'omniauth'
+gem 'omniauth-identity'
+
+gem 'bcrypt-ruby', '~> 3.0.0'
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
- gem 'pg'
+gem 'pg'
 gem 'sqlite3', :group => [:development, :test]
 
 group :production do
   gem 'thin'
- 
 end
 
 group :development do
